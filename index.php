@@ -1,31 +1,67 @@
-<!DOCTYPE html5>
-<html lang="en">
+<?php
+// Starting the session
+session_start();
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>GAURAV CHAUDHARY</title>
-    <link rel="stylesheet" href="Stylesheet/Style.css">
+// Including the database connection
+require_once 'conn.php';
 
-</head>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['sender-name']);
+    $email = htmlspecialchars($_POST['sender-email']);
+    $message = htmlspecialchars($_POST['message']);
 
-<body>
-    <nav>
-        <h1>GAURAV CHAUDHARY</h1>
-        <ul class="navigation">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#educations" class="nav-link">Education</a></li>
-            <li><a href="#skills" class="nav-link" ills>Skills</a></li>
-            <li><a href="#certificates" class="nav-link">Certificate</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="about" id="about">
+    // Validate input
+    if (!empty($name) && !empty($email) && !empty($message)) {
+        // Insertion Query
+        $query = "INSERT INTO member (sender_name, sender_email, message) VALUES (:sender_name, :sender_email, :message)";
+        $stmt = $conn->prepare($query);
+        $stmt->bindParam(':sender_name', $name);
+        $stmt->bindParam(':sender_email', $email);
+        $stmt->bindParam(':message', $message);
+
+        // Check if the execution of query is successful
+        if ($stmt->execute()) {
+            // Setting a 'success' session to save our insertion success message.
+            $_SESSION['success'] = "Message Sent";
+        } else {
+            // Setting an 'error' session to save our insertion error message.
+            $_SESSION['error'] = "Message Sending Failed";
+        }
+
+        // Redirecting to the index.php 
+        header('Location: index.php');
+        exit();
+    } else {
+        echo "<h1>Error: All fields are required.</h1>";
+    }
+} else {
+    // Existing HTML content
+    ?>
+    <!DOCTYPE html5>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>GAURAV CHAUDHARY</title>
+        <link rel="stylesheet" href="Stylesheet/Style.css">
+    </head>
+    <body>
+        <nav>
+            <h1>GAURAV CHAUDHARY</h1>
+            <ul class="navigation">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#educations" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificate</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="about" id="about">
         <iframe src="Resume/Resume.pdf" class="hero-img"></iframe>
         <div class="bio">
             <h2 class="bio-title">About Me</h2>
@@ -169,42 +205,39 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-form-container">
-            <div class="contact-form">
-                <form action="index.php" method="POST">
-                    <div class="form-control">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
-                            class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
-                            class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="message">Message</label>
-                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
-                            class="input-field" required></textarea>
-                    </div>
-                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-                </form>
+
+     <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="index.php" method="POST">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                    </form>
+                </div>
             </div>
-        </div>
     </section>
     <footer>
-        <p class="copy">&copy; Copyright 2024 </p>
-        <p class="copy">Built with &#x2661; by
-            <a href="#" target="_blank">Gaurav Chaudhary</a>
-        </p>
+            <p class="copy">&copy; Copyright 2024</p>
+            <p class="copy">Built with &#x2661; by <a href="#" target="_blank">Gaurav Chaudhary</a></p>
     </footer>
-
-    <div class="socials">
-        <a href="#" target="_blank"><img src="images/Twitter.png" alt="Twitter" loading="lazy" class="socicon" /></a>
-        <a href="#" target="_blank"><img src="images/Linkedn.png" alt="Linkedin" loading="lazy" class="socicon" /></a>
-    </div>
-</body>
-
-</html>
+        <div class="socials">
+            <a href="#" target="_blank"><img src="images/Twitter.png" alt="Twitter" loading="lazy" class="socicon" /></a>
+            <a href="#" target="_blank"><img src="images/Linkedn.png" alt="Linkedin" loading="lazy" class="socicon" /></a>
+        </div>
+    </body>
+    </html>
+    <?php
+}
+?>
