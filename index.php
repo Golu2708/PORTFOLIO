@@ -210,7 +210,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2>Contact Me</h2>
             <div class="contact-form-container">
                 <div class="contact-form">
-                    <form action="index.php" method="POST">
+                    <form action="conn.php" method="POST">
                         <div class="form-control">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
