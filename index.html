@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header with sticky navigation -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">Gaurav Chaudhary</a>
+            <nav class="nav">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section with animated intro -->
+    <section class="hero container">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Web Developer & Automation Engineer</h1>
+            <p class="hero-subtitle animate-fade-in">As a Web Designer and SCADA Engineer, I create user-friendly websites and provide automation solutions that help organizations meet operational needs and achieve goals.</p>
+            <div class="hero-buttons animate-fade-in">
+                <a href="#projects" class="cta-button primary-btn">View My Work</a>
+                <a href="#contact" class="cta-button secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with card-based layout -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Recent Projects</h2>
+
+            <div class="projects-cards">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="Images/NCL.png" alt="NCL logo" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">SCADA Development</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">NCL: Pilot Plant Project</h3>
+                        <p class="project-description">This project focuses on the monitoring and control of a pilot plant at NCL, integrating Spandan SCADA for real-time operation of pumps, reboilers, valves, and energy meters. The system includes complete SCADA development, intuitive UI design, and robust data management using SQLite for efficient storage and retrieval.</p>
+                        <div class="project-tags">
+                            <span class="tag">SCADA</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">UI Design</span>
+                        </div>
+                        <a href="HTML/NCL.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="Images/COCACOLA.png" alt="Coca-Cola logo" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Manufacturing Automation</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Coca-Cola Plant, Nagpur</h3>
+                        <p class="project-description">This project focuses on the automation and control of the production plant at Coca-Cola, Nagpur, ensuring seamless monitoring and management of the entire manufacturing process. Designed to optimize efficiency, maintain product quality, and enhance real-time decision-making.</p>
+                        <div class="project-tags">
+                            <span class="tag">Automation</span>
+                            <span class="tag">Manufacturing</span>
+                            <span class="tag">Process Control</span>
+                        </div>
+                        <a href="HTML/CocaCola.html" class="project-link">View Project <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="Images/Tata.png" alt="TATA Motors logo" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Display Systems</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TATA Motors: Andon Displays</h3>
+                        <p class="project-description">This project focuses on the real-time monitoring and control of press machines at TATA Motors, Pune (Pimpri-Chinchwad), utilizing an ANDON display system to enhance production visibility and efficiency. By integrating SCADA, the system ensures accurate tracking of machine performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">ANDON</span>
+                            <span class="tag">SCADA</span>
+                            <span class="tag">Manufacturing</span>
+                        </div>
+                        <a href="/HTML/Tata.html" class="project-link">View Project <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="Images/Delta.png" alt="Delta Logo" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Display Systems</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DELTA: IoT & Andon Displays</h3>
+                        <p class="project-description">This project focuses on the real-time monitoring and control of press machines at DELTA, deployed for Wahi Sons in Haryana, using a SCADA-integrated ANDON display system to enhance production visibility, operational efficiency, and machine uptime. By collecting and displaying real-time data on machine status, performance metrics, and downtime alerts, the system empowers operators and supervisors to make timely, informed decisions.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Manufacturing</span>
+                            <span class="tag">SCADA</span>
+                            <span class="tag">ANDON</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                        <a href="/HTML/Delta.html" class="project-link">View Project <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="Images/Hitech.png" alt="Hitech Elex LLP Logo" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Energy Monitoring</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sub-Station Energy Monitoring</h3>
+                        <p class="project-description">This project, developed for Hitech Elex LLP, focuses on the integration and monitoring of 30 energy meters (MFM and ABT) using the MODBUS-485 communication protocol. Utilizing SpandanSCADA software, the system is designed to acquire data, generate reports, and monitor energy usage across 5 dedicated screens. A total of 43 SCADA screens will be configured to handle visualization, control, and system monitoring. The project includes the integration of 33 meters, each capturing 13 parameters, with data stored in a centralized database for analysis and custom report generation to support operational efficiency and informed decision-making.</p>
+                        <div class="project-tags">
+                            <span class="tag">Automation</span>
+                            <span class="tag">Energy Monitoring</span>
+                            <span class="tag">Report Generation</span>
+                            <span class="tag">Control System</span>
+                        </div>
+                        <a href="/HTML/Hitech.html" class="project-link">View Project <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- "View More Projects" button -->
+            <div class="view-all-projects">
+                <a href="#" class="cta-button primary-btn">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with improved layout -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <img src="Images/Gaurav.png" alt="Your Photo" class="about-image">
+                </div>
+                <div class="about-text">
+                    <h2>Hello, I'm <span class="highlight">Gaurav Chaudhary</span></h2>
+                    <p>I'm a Web Developer and Automation Engineer with extensive experience in creating industrial automation solutions and user-friendly websites. My approach combines technical expertise with a focus on usability and efficiency.</p>
+
+                    <div class="skills-container">
+                        <h3>My Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                                <div class="skill-info">
+                                    <h4>Web Development</h4>
+                                    <p>Creating responsive, user-friendly websites and applications</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-industry"></i></div>
+                                <div class="skill-info">
+                                    <h4>SCADA Systems</h4>
+                                    <p>Designing and implementing industrial control systems</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                                <div class="skill-info">
+                                    <h4>Automation</h4>
+                                    <p>Creating efficient automation solutions for various industries</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                                <div class="skill-info">
+                                    <h4>UI/UX Design</h4>
+                                    <p>Crafting intuitive interfaces for optimal user experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="cta-button primary-btn">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with improved form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>gauravchaudhary8266@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9870947062</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Mathura, Uttar Pradesh, India</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with improved layout -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Gaurav Chaudhary</h3>
+                <p>Web Developer & Automation Engineer</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Gaurav Chaudhary. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

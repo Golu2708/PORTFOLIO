@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDON Monitoring System - Gaurav Chaudhary</title>
+    <link rel="stylesheet" href="/CSS/Tata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="/index.html" class="logo">Gaurav Chaudhary</a>
+            <nav class="nav">
+                <a href="/index.html#projects" class="nav-link">Projects</a>
+                <a href="/index.html#about" class="nav-link">About</a>
+                <a href="/index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1 class="project-title">Press Machine Monitoring System</h1>
+            <p class="project-subtitle">Advanced ANDON display system for real-time monitoring and control of manufacturing press machines</p>
+            <a href="/index.html#projects" class="back-button">← Back to Projects</a>
+        </div>
+    </section>
+    
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <img src="/Andon/Main.png" alt="ANDON Display System Overview" class="project-image-main">
+            <div class="project-description">
+                <p>This project focuses on the comprehensive monitoring and control of press machines through an advanced ANDON display system. The solution provides real-time visibility into manufacturing operations, enabling production teams to quickly identify and address issues, optimize machine performance, and make data-driven decisions.</p>
+                
+                <p>The system delivers critical manufacturing insights including:</p>
+                <ul>
+                    <li>Real-time machine status monitoring and visualization</li>
+                    <li>Overall Equipment Effectiveness (OEE) calculation and analysis</li>
+                    <li>Downtime tracking with root cause identification</li>
+                    <li>Production loss quantification and reporting</li>
+                    <li>Performance comparison across shifts and time periods</li>
+                </ul>
+                
+                <p>Leveraging SCADA technology, the solution collects data directly from press machines, processes it through sophisticated algorithms, and presents actionable information on intuitive ANDON displays strategically positioned throughout the facility. The comprehensive alert system ensures immediate notification of critical events through both visual displays and automated messaging channels.</p>
+                
+                <p>The system's architecture is designed for scalability and reliability, with data securely stored in a SQLite database for efficient retrieval and analysis.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Key Features -->
+    <section class="key-features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 class="feature-title">ANDON Display System</h3>
+                    <p class="feature-description">Real-time visualization of machine status, production metrics, and operational alerts through large-format displays that provide instant visibility to operators, supervisors, and management across the manufacturing floor.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">OEE Calculation & Analysis</h3>
+                    <p class="feature-description">Automated calculation of Overall Equipment Effectiveness with detailed breakdown of Availability, Performance, and Quality factors, enabling targeted improvement initiatives to maximize production efficiency.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Downtime Tracking</h3>
+                    <p class="feature-description">Comprehensive monitoring of machine downtime events with categorization, duration tracking, and root cause analysis, helping identify recurring issues and prioritize maintenance activities.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Production Loss Analysis</h3>
+                    <p class="feature-description">Quantification of production losses due to various factors including machine breakdowns, changeovers, material shortages, and quality issues, with financial impact assessment.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Automated Reporting</h3>
+                    <p class="feature-description">Shift-based report generation with automatic email distribution to key stakeholders, providing timely insights without manual intervention. Critical events trigger immediate SMS alerts to designated personnel.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Comparison Analytics</h3>
+                    <p class="feature-description">Advanced reporting tools that allow comparison of production data across different time periods, shifts, or machine lines, helping identify best practices and improvement opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery -->
+    <!-- <section class="project-gallery">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/320" alt="ANDON Display Dashboard" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/320" alt="OEE Analytics Screen" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/320" alt="Downtime Analysis" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/320" alt="Production Metrics" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/320" alt="Alert Management Interface" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/320" alt="Comparison Reports" class="gallery-image">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Technical Details -->
+    <section class="technical-details">
+        <div class="container">
+            <h2 class="section-title">Technical Details</h2>
+            <div class="details-container">
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <h3 class="detail-title">Data Acquisition & Integration</h3>
+                        <ul class="detail-list">
+                            <li>Direct machine PLC integration using industrial protocols</li>
+                            <li>Real-time data collection with millisecond resolution</li>
+                            <li>Secure communication channels with data validation</li>
+                            <li>Support for multiple machine types and manufacturers</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3 class="detail-title">SCADA Implementation</h3>
+                        <ul class="detail-list">
+                            <li>Comprehensive SCADA development for monitoring and control</li>
+                            <li>Custom-designed user interfaces for different user roles</li>
+                            <li>Alarm management with prioritization and escalation</li>
+                            <li>Historical data trending and analysis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3 class="detail-title">Analytics Engine</h3>
+                        <ul class="detail-list">
+                            <li>Advanced algorithms for OEE calculation</li>
+                            <li>Downtime pattern recognition and analysis</li>
+                            <li>Production efficiency comparisons across time periods</li>
+                            <li>Predictive maintenance indicators based on performance data</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3 class="detail-title">Reporting & Notifications</h3>
+                        <ul class="detail-list">
+                            <li>Automated shift-based report generation</li>
+                            <li>Email distribution with customizable recipient lists</li>
+                            <li>SMS alerts for critical events and thresholds</li>
+                            <li>Configurable notification rules and schedules</li>
+                            <li>Export capabilities in multiple formats (PDF, Excel, CSV)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Implementation Process -->
+    <!-- <section class="implementation-process">
+        <div class="container">
+            <h2 class="section-title">Implementation Process</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Requirements Analysis</h3>
+                        <p>Detailed assessment of manufacturing processes, machine capabilities, and reporting needs to establish system requirements and performance objectives.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>System Architecture Design</h3>
+                        <p>Development of comprehensive system architecture including communication protocols, database structure, and user interface frameworks.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>SCADA Development</h3>
+                        <p>Creation of custom SCADA solution with machine integration, data processing algorithms, and storage mechanisms in SQLite database.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>ANDON Display Design</h3>
+                        <p>Design and implementation of intuitive ANDON display interfaces optimized for visibility and quick comprehension in manufacturing environments.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Alert & Reporting Configuration</h3>
+                        <p>Setup of automated reporting systems, alert thresholds, and notification pathways including email distribution and SMS alerts.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Testing & Deployment</h3>
+                        <p>Rigorous testing of all system components followed by phased deployment and operator training to ensure smooth adoption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Results & Benefits -->
+    <section class="results-section">
+        <div class="container">
+            <h2 class="section-title">Results & Benefits</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Increased Productivity</h3>
+                    <p>15% improvement in overall equipment effectiveness through reduced downtime and optimized machine utilization.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Faster Response Times</h3>
+                    <p>Reduced reaction time to production issues by 70% through real-time visualization and immediate alerts.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-search"></i></div>
+                    <h3>Enhanced Visibility</h3>
+                    <p>Complete transparency into manufacturing operations with detailed insights into performance factors affecting production.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Streamlined Reporting</h3>
+                    <p>Elimination of manual report generation, saving approximately 20 hours per week in administrative tasks.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Proactive Maintenance</h3>
+                    <p>Transition from reactive to proactive maintenance practices through early identification of developing issues.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Cost Reduction</h3>
+                    <p>Significant reduction in production losses through improved machine availability and performance optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="section-title">Interested in Manufacturing Intelligence Solutions?</h2>
+            <p class="cta-text">Looking to improve visibility, efficiency, and productivity in your manufacturing operations? Let's discuss how a custom ANDON display system can transform your production environment.</p>
+            <a href="/index.html#contact" class="cta-button">Contact Me</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Gaurav Chaudhary</h3>
+                <p>Web Developer & Automation Engineer</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/index.html#projects">Projects</a></li>
+                        <li><a href="/index.html#about">About</a></li>
+                        <li><a href="/index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Gaurav Chaudhary. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

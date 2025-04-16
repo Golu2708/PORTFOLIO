@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substation Monitoring Project - Gaurav Chaudhary</title>
+    <link rel="stylesheet" href="/CSS/Hitech.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="/index.html" class="logo">Gaurav Chaudhary</a>
+            <nav class="nav">
+                <a href="/index.html#projects" class="nav-link">Projects</a>
+                <a href="/index.html#about" class="nav-link">About</a>
+                <a href="/index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1 class="project-title">Substation Monitoring System</h1>
+            <p class="project-subtitle">Comprehensive SCADA solution for electrical substations with automated reporting and critical alert management</p>
+            <a href="/index.html#projects" class="back-button">← Back to Projects</a>
+        </div>
+    </section>
+    
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <img src="/Substation/Main.png" alt="Substation Monitoring Overview" class="project-image-main">
+            <div class="project-description">
+                <p>I developed a robust substation monitoring and energy management system for Hitech Elex LLP, leveraging the capabilities of SpandanSCADA and the MODBUS 485 communication protocol. This system is designed for seamless acquisition, visualization, and reporting of electrical data from a network of advanced multifunction meters (MFM) and ABT meters.</p>
+                
+                <p>The monitoring solution focuses on real-time acquisition from 30+ energy meters, each capturing 13 distinct parameters, ensuring accurate and reliable data flow throughout the facility. The communication backbone of the project is built on MODBUS 485, providing efficient and secure connectivity across all meters.</p>
+
+                <p>The solution includes the development and configuration of 43 custom-designed SCADA screens, purpose-built for data acquisition, visualization, energy monitoring, and report generation. These interfaces empower operators with clear insights into system health and performance.</p>
+
+                <p>Key components of the project include:</p>
+
+                <ul>
+                    <li>Integration of 33 meters, communicating over MODBUS 485</li>
+                    <li>Acquisition and visualization of key electrical parameters</li>
+                    <li>Data logging and storage in a lightweight SQLite database</li>
+                    <li>Tailored report generation based on shift timings</li>
+                    <li>Automated email dispatch of daily reports</li>
+                    <li>Real-time SMS alerts for critical alarms and fault conditions</li>
+                </ul>
+                
+                <p>The project involved complete development of the SCADA system with intuitive UI design, comprehensive reporting capabilities, and reliable data storage utilizing SQLite database architecture. One of the key features is the automatic report generation according to shift schedules, complemented by automated email distribution and SMS alerts for critical alarms.</p>
+                
+                <p>The user-friendly interface was meticulously designed to provide operators with immediate visibility into substation conditions, enabling efficient monitoring and quick response to any anomalies or emergency situations.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Key Features -->
+    <section class="key-features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 class="feature-title">Real-time Monitoring</h3>
+                    <p class="feature-description">Comprehensive visualization of all substation parameters including voltage, current, power factor, frequency, and equipment status with millisecond update intervals.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Automated Reporting</h3>
+                    <p class="feature-description">Shift-based reports automatically generated and distributed via email to relevant personnel, providing operational insights and performance metrics.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Multi-channel Alerts</h3>
+                    <p class="feature-description">Critical alarms instantly communicated through SMS and email notifications to ensure rapid response regardless of operator location.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Data Storage & Analytics</h3>
+                    <p class="feature-description">SQLite database implementation for efficient data storage, enabling historical analysis, trend identification, and predictive maintenance capabilities.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Custom UI Design</h3>
+                    <p class="feature-description">Intuitive interface with single-line diagrams, color-coded status indicators, and interactive controls for optimal operator experience.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3 class="feature-title">Event Logging</h3>
+                    <p class="feature-description">Comprehensive event recorder captures all system activities, operator actions, and equipment state changes for compliance and troubleshooting purposes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technical Details -->
+    <section class="technical-details">
+        <div class="container">
+            <h2 class="section-title">Technical Details</h2>
+            <div class="details-container">
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <h3 class="detail-title">SCADA Architecture</h3>
+                        <ul class="detail-list">
+                            <li>Distributed control system with redundant servers</li>
+                            <li>OPC communication protocol for device integration</li>
+                            <li>IEC 61850 compatibility for substation automation</li>
+                            <li>Real-time data acquisition with millisecond precision</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3 class="detail-title">Data Management</h3>
+                        <ul class="detail-list">
+                            <li>SQLite database for efficient data storage</li>
+                            <li>Automated data compression and archiving</li>
+                            <li>Secure data access with role-based permissions</li>
+                            <li>Flexible data export in multiple formats</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3 class="detail-title">Reporting System</h3>
+                        <ul class="detail-list">
+                            <li>Shift-based automated report generation</li>
+                            <li>Customizable report templates for different stakeholders</li>
+                            <li>Scheduled email distribution to management</li>
+                            <li>Performance metrics and KPI visualization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3 class="detail-title">Alert Management</h3>
+                        <ul class="detail-list">
+                            <li>Multi-level alarm prioritization system</li>
+                            <li>SMS gateway integration for critical notifications</li>
+                            <li>Email alerts with detailed diagnostic information</li>
+                            <li>Escalation protocols for unacknowledged alarms</li>
+                            <li>Historical alarm analysis and trending</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Benefits -->
+    <section class="results-section">
+        <div class="container">
+            <h2 class="section-title">Results & Benefits</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>43% Reduction in Outage Response Time</h3>
+                    <p>The implementation of real-time monitoring and instant alerts significantly reduced the time required to identify and respond to potential outages, improving overall grid reliability.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>27% Increase in Operational Efficiency</h3>
+                    <p>Automated reporting and analytics capabilities eliminated manual data collection processes, allowing operators to focus on critical decision-making and system optimization.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Predictive Maintenance Implementation</h3>
+                    <p>Historical data analysis enabled the development of predictive maintenance protocols, reducing unplanned downtime by 31% and extending equipment lifespan.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3>Enhanced Safety Standards</h3>
+                    <p>Improved monitoring and alert systems have contributed to zero safety incidents since implementation, protecting both personnel and equipment from potential hazards.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Substantial Cost Savings</h3>
+                    <p>The combined benefits of improved efficiency, reduced downtime, and optimized maintenance schedules resulted in approximately $215,000 annual cost savings for the facility.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Improved Stakeholder Communication</h3>
+                    <p>Automated reporting with customized information for different stakeholders has enhanced transparency and facilitated more informed decision-making at all organizational levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">System Demonstration</h2>
+            <div class="video-container">
+                <video src="/Substation/Demo.mkv" controls class="project-video"></video>
+                <p class="video-caption">Demonstration of the Substation Monitoring System showing the SCADA interface, real-time data visualization, automated reporting, and alert management capabilities.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="section-title">Interested in Power Management Solutions?</h2>
+            <p class="cta-text">Looking to implement advanced monitoring and automation systems for your electrical substations or power distribution networks? Let's discuss how similar solutions can enhance your operational reliability and efficiency.</p>
+            <a href="/index.html#contact" class="cta-button">Contact Me</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Gaurav Chaudhary</h3>
+                <p>Web Developer & Automation Engineer</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/index.html#projects">Projects</a></li>
+                        <li><a href="/index.html#about">About</a></li>
+                        <li><a href="/index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Gaurav Chaudhary. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
